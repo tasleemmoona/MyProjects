@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Arts&Crafts</title>
+    <link href="ex.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" 
+      type="image/png" 
+      href="https://media.gettyimages.com/vectors/art-and-craft-artist-dress-bohemian-painter-with-his-brush-vector-id97641161"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="ex.js"></script>
+  </head>
+  <body  onload="myfun()" >
+  	<div class="container">
+  	    <img id="img" src="dp.jpg" alt="Error 404" width="100%" height="700"/>
+  	    <button class="button button1">SignUp <i class="fa fa-user-plus"></i></button>
+  	    <button class="button button2">Login <i class='far fa-user' style='color:white'></i></i></button>
+  	    <div class="center">
+  	    	<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arts&Crafts4U</h1>
+  	    	<p>BOOK A UNIQUE GIFT TO SURPRISE YOUR SPECIAL ONES</p>
+  	    	<a href="#h1">Click Here to Book</a>
+  	    </div>
+    </div>
+    <br>
+    <h1 id="h1">Book gifts for special occasions for your loved ones</h1>
+    
+    <br>
+
+	<div class="bday" id="p5">
+        <img src="card_g.jpg" alt="Error404"/>
+        <div class="text" id="s5">
+        	<h3>Greeting Card <i class='far fa-hand-point-up' style='font-size:24px;color:violet'></i>&nbsp;&nbsp;<i class='fas fa-rupee-sign' style='font-size:16px'></i>200</h3>
+        	<p>Greeting Card for your Mother/Wife/Sister/Daughter</p>
+            <p>Wish them in a unique greeting card</p><br>
+            <a href="#book" id="b5" onclick="book(this.id)">Buy Now</a>
+        </div>
+    </div>
+    <div class="bday" id="p2">
+        <img src="cake.jpg" alt="Error404"/>
+        <div class="text" id="s2">
+            <h3>Cake with Chocolates Inside it <i class="fa fa-birthday-cake" style="font-size:24px;color:hotpink"></i>&nbsp;&nbsp;<i class='fas fa-rupee-sign' style='font-size:16px'></i>500</h3>
+            <p>If your loved ones love chocolates, then here is a perfect gift <i class='fas fa-gift' style='font-size:24px;color:purple'></i></p><br>
+            <a href="#book" id="b2" onclick="book(this.id)">Buy Now</a>
+        </div>
+    </div>
+    <div class="bday" id="p3">
+        <img src="photocube.jpg" alt="Error404"/>
+        <div class="text" id="s3">
+            <h3>Cube with Photos <i class='fas fa-dice-d6' style='font-size:24px;color:orange'></i>&nbsp;&nbsp;<i class='fas fa-rupee-sign' style='font-size:16px'></i>1000</h3>
+            <p>For this we need 48 photos</p>
+            <p>This gift item is perfect to make anyone feel special and bring back all old memories</p><br>
+            <a href="#book" id="b3" onclick="book(this.id)">Buy Now</a>
+        </div>
+    </div>
+    <div class="bday" id="p1" style="display: none;">
+        <img id="img1" src="bday.jpg" alt="Error404"/>
+        <div class="text" id="s1">
+            <h3>Book ur Suprise <i class='fas fa-gift' style='font-size:24px;color:purple'></i>&nbsp;&nbsp;<i class='fas fa-rupee-sign' style='font-size:16px'></i>3000</h3>
+            <p>Are you looking for any unique theme to suprise your beloved person, then we are here to make it more special <i class='fas fa-heart' style='font-size:24px;color:red'></i></p>
+            <p>Decorations can be done in your car or in our vehicle <i class='fas fa-grin-alt' style='font-size:24px;color:orange'></i></p><br>
+            <a href="#book" id="b1" onclick="book(this.id)">Buy Now</a>
+        </div>
+    </div>
+    <div class="bday" id="p4" style="display: none;">
+        <img id="img1" src="card_b.jpg" alt="Error404"/>
+        <div class="text" id="s4">
+            <h3>Greeting Card <i class='far fa-hand-point-up' style='font-size:24px;color:violet'></i>&nbsp;&nbsp;<i class='fas fa-rupee-sign' style='font-size:16px'></i>200</h3>
+        	<p>Greeting Card for your Husband/Father/Brother/Son</p>
+        	<p>Wish them in a unique greeting card</p><br>
+        	<a href="#book" id="b4" onclick="book(this.id)">Buy Now</a>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="link">
+        <button class="page" id="btn1" onclick="myfun(this.id)">&laquo;</button>
+        <button class="page" id="btn2" onclick="myfun(this.id)">1</button>
+        <button class="page" id="btn3" onclick="myfun(this.id)">2</button>
+        <button class="page" id="btn4" onclick="myfun(this.id)">&raquo;</button>
+    </div>    
+
+    <br><br><br><br>
+
+    <div id="book">
+    	<div id="form">
+	    	<h2>Please provide your details, we will reach to you <i class='fas fa-smile' style='font-size:24px'></i></h2><br>
+	    	<label for="inp1"><i class='fas fa-gift' style='font-size:24px;'></i></label>
+	    	<input type="text" id="inp1" style="background-color: lightgrey" readonly><br>
+	    	<label for="email"><i class='fas fa-rupee-sign' style='font-size:24px;'></i></label>
+	    	<input type="Number" id="amt" style="background-color: lightgrey" readonly><br>
+	    	<label for="num"><i class='fas fa-mobile-alt' style='font-size:24px;transform: rotate(-8deg);'></i></label>
+	    	<input type="tel" id="num" placeholder="Enter 10-digit mobile number" minlength="10" maxlength="10" pattern="^[789]{1}[0-9]{9}"><br>
+	    	<span id="demo" style="color:red;display: none;margin-bottom: 15px"></span>
+	    	<label for="email"><i class='far fa-edit' style='font-size:24px'></i></label>
+	    	<input type="email" id="email" placeholder="Enter email address"><br>
+	    	<span id="demo1" style="color:red;display: none;margin-bottom: 15px"></span>
+	    	<button id="confirm" onclick="confirm()">Confirm</button>
+	    </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h1 id="msg">THANKYOU <i class='fas fa-handshake' style='font-size:24px;color:#750F3A;'></i></h1>
+
+    <br><br>
+    <div class="footer">
+    	<p>Copyrights @ME - All Rights Reserved. Privacy Policy | Site Terms & Disclosures</p>
+    </div>
+  </body>
+</html>
