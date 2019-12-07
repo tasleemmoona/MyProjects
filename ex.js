@@ -128,14 +128,17 @@ function confirm(){
     	document.getElementById("demo1").innerHTML = "Please enter email address correctly";
   		 c2 = 1;
   	}  
-	if (mob != '' && email != '' && c1 == 0 && c2 == 0){
-		document.getElementById("msg").style.display = "block";
-		document.getElementById("inp1").value = '';
-		document.getElementById("amt").value = '';
-		mob.value = '';
-		x.value = ''
-		document.getElementById("demo").style.display = "none";
-		document.getElementById("demo1").style.display = "none";
+	if (mob.value != '' && email.value != ''){
+		if(c1 == 0 && c2 == 0){
+			document.getElementById("msg").style.display = "block";
+			document.getElementById("inp1").value = '';
+			document.getElementById("amt").value = '';
+			mob.value = '';
+			x.value = ''
+			document.getElementById("demo").style.display = "none";
+			document.getElementById("demo1").style.display = "none";
+	    }
 	}
+		
 
 }

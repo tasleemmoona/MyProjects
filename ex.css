@@ -9,8 +9,8 @@
   	transform: translate(-50%, -50%);
   	font-style: italic;
   	font-family: "Ravie";
-  	color: #7A4804;
-  	text-shadow: 3px 2px black;
+  	color: #66052E;
+  	text-shadow: 3px 2px silver;
 }
 
 .center h1 {
@@ -32,8 +32,10 @@
 }
 
 .center a {
+	font-size: 22px;
 	text-align: center;
-	color: orange;
+	color: #66052E;
+  	text-shadow: 3px 2px silver;
 	text-decoration: none;
 }
 
